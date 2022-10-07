@@ -98,6 +98,7 @@ export default class TabBar extends React.PureComponent<IProps, any> {
 
     return (
       <TouchableOpacity
+        activeOpacity={1}
         onPress={() => onPress(key)}
         key={key}
         onLayout={this.onTabLayout(key)}
